@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_white_bg"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back" />
+        </LinearLayout>
+
+        <!-- Event Name -->
+        <EditText
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Event Description -->
+        <EditText
+            android:id="@+id/eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Event Description"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Event Category -->
+        <Spinner
+            android:id="@+id/eventCategory"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Date Picker -->
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:drawableStart="@drawable/ic_calendar"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Time Picker -->
+        <Button
+            android:id="@+id/btnPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:drawableStart="@drawable/ic_time"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:drawableStart="@drawable/ic_location"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/eventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Location"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Dietary Specifications -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary Requirements"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/diet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Requirement 1"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/diet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Requirement 2"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Music Poll -->
+        <CheckBox
+            android:id="@+id/musicPollCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music Suggestions"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Google Drive Link -->
+        <EditText
+            android:id="@+id/googleDriveLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insert Google Drive lInk"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/createEventBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

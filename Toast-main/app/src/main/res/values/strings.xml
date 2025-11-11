@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ToastApplication</string>
+    <string name="default_web_client_id">AIzaSyCdG2D_sXlDWu5KIuik-MPZ0otrewHRu2A</string>
+    <string-array name="dietary_options">
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Halal</item>
+        <item>Kosher</item>
+        <item>No Preference</item>
+    </string-array>
+    <string name="prompt_info_title">Toast Authentication</string>
+    <string name="prompt_info_subtitle">Please login to get access</string>
+    <string name="prompt_info_description">Toast is using Android biometric authentication</string>
+    <string name="prompt_info_use_app_password">Use app password</string>
+    <string name="use_biometrics">Use biometrics</string>
+    <string name="enable_biometric_login">Enable Biometric Login</string>
+    <string name="desc_biometrics_authorization">Enter your login ID and password to confirm activation of Biometric Login.</string>
+    <string name="btn_authorize">Authorize</string>
+</resources>
